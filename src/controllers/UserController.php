@@ -28,4 +28,12 @@ class UserController {
             echo "Error al guardar el usuario.";
         }
     }
+
+    public function getAllUsers(){
+        global $connection;
+        $users = $connection->query("");
+        $users = $users->fetchAll(PDO::FETCH_ASSOC);
+        $users = array_map("", $users);
+        return $users;
+    }
 }
