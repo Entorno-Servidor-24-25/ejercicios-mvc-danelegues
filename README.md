@@ -9,7 +9,7 @@
 ### Pregunta 2: ¿Qué camino sigue el código cuando el usuario introduce datos en el formulario?
 **Descripción**: Detalla el proceso desde que el usuario envía el formulario hasta que se guarda la información y se muestra una respuesta en pantalla.
 
--De la misma manera  que la anterior pregunta lo primero lalma a los controlers en este caso "UserController.php". Una vez que entra al controlador llama a archivo que crea la base de datos, y con ello hace una funcion para que se puedan guardar los users, dentro de esta funcion, en el caso de que se cree un nuevo user llama a la view "userSucces.php"
+-De la misma manera  que la anterior pregunta lo primero lalma a los controlers en este caso "UserController.php". Una vez que entra al controlador llama a archivo que crea la base de datos, y con ello hace una funcion para que se puedan guardar los users en la que se llama a el modelo de "user.php" para crear el usuario, dentro de esta funcion, en el caso de que se cree un nuevo user llama a la view "userSucces.php"
 
 ### Ejercicio 1: Mostrar Todos los Usuarios
 **Descripción**: Extiende la funcionalidad de la aplicación para que se muestre una lista de todos los usuarios que están en la base de datos.
